@@ -351,6 +351,7 @@
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/PlacementManager.cs"
 "Assets/Scripts/Placing.cs"
+"Assets/Scripts/RotateCamera.cs"
 "Assets/Scripts/Spawning.cs"
 "Assets/Scripts/UIHandler.cs"
 -langversion:9.0

@@ -6,12 +6,15 @@ public class Spawning : MonoBehaviour
 {
     [SerializeField]
     private GameObject Minion;
+    public GameObject MinionSpawnPosition;
     [SerializeField]
     private GameObject EnemyMinion;
+    public GameObject EnemySpawnPosition;
 
     public int chance = 100;
     public int Space = 20;
     public int spacetemp;
+
     private bool IsOpen = false;
 
     // Update is called once per frame
@@ -28,7 +31,7 @@ public class Spawning : MonoBehaviour
                 spacetemp--;
                 if (spacetemp <= 0)
                 {
-                    Instantiate(Minion, transform.position, transform.rotation);
+                    Instantiate(Minion, MinionSpawnPosition.transform.position, transform.rotation);
                     chance--;
                     spacetemp = Space;
                 }
@@ -51,7 +54,7 @@ public class Spawning : MonoBehaviour
     private void Close()
     {
         chance = 0;
-        Instantiate(EnemyMinion, transform.position, transform.rotation);
+        Instantiate(EnemyMinion, EnemySpawnPosition.transform.position, transform.rotation);
         IsOpen = false;
     }
 }
