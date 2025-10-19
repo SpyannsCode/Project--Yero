@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour
     private void CheckForTilesOrWalls()
     {
         RaycastHit hit;
+        print("checked");
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit))
         {
             print("yipee");

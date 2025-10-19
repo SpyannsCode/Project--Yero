@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 804689698210139729}
   - component: {fileID: 866392003259309535}
   - component: {fileID: 2008028184316902930}
+  - component: {fileID: 8698612790216447078}
   m_Layer: 1
   m_Name: StartHole
   m_TagString: Untagged
@@ -97,3 +98,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8698612790216447078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2346836574357450816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea9c7a96c901734890e61937c9f649e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Minion: {fileID: 4857371129603561391, guid: 89f96dd678317ce46a6a7820c0f3d5b6, type: 3}
+  EnemyMinion: {fileID: 4494781030296749956, guid: 69cc6a4286842554882899cf2e81f5d4, type: 3}
+  chance: 100
