@@ -9,7 +9,7 @@ public class RotateCamera : MonoBehaviour
     public float Sensitivity = 500f;
     public bool Camerarot = false;
     public float yaw = 0f;
-    public float pitch = 90f;
+    public float pitch = 85f;
 
     public float UpperLimit=90f;
     public float DownwardLimit = 15f;
@@ -52,7 +52,7 @@ public class RotateCamera : MonoBehaviour
             pitch = DownwardLimit;
         if (Input.GetKeyDown(KeyCode.R))
         {
-            pitch = 90;
+            pitch = 85;
             yaw = 0;
         }
     }
