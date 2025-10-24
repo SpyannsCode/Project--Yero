@@ -16,8 +16,6 @@ public class Spawning : MonoBehaviour
     public int spacetemp;
 
     private bool IsOpen = false;
-
-    // Update is called once per frame
     void Start()
     {
         spacetemp = Space;
@@ -33,7 +31,7 @@ public class Spawning : MonoBehaviour
                 {
                     Instantiate(Minion, MinionSpawnPosition.transform.position, transform.rotation);
                     chance--;
-                    spacetemp = Space;
+                    spacetemp = Random.Range(10, Space);
                 }
             }
             else
@@ -43,12 +41,13 @@ public class Spawning : MonoBehaviour
         {
             if (Random.Range(chance, 1001) == 1000)
                 Open();
-            else if (Random.Range(chance, 1001) == 100)
+            else if (Random.Range(chance, 101) == 100)
                 chance++;
         }
     }
     private void Open()
     {
+        chance = Random.Range(3, 204);
         IsOpen = true;
     }
     private void Close()

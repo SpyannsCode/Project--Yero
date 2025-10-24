@@ -10,6 +10,8 @@ TagManager:
   - GW
   - Wall/Barricade
   - Minion
+  - EnemyMinion
+  - Ending
   layers:
   - Default
   - TransparentFX

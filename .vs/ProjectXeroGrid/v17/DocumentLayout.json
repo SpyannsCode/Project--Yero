@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Home\\ProjectXeroGrid\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|c:\\users\\home\\projectxerogrid\\assets\\scripts\\rotatecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotatecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|C:\\Users\\Home\\ProjectXeroGrid\\assets\\scripts\\spawning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|C:\\Users\\Home\\ProjectXeroGrid\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|c:\\users\\home\\projectxerogrid\\assets\\scripts\\placing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\placing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|c:\\users\\home\\projectxerogrid\\assets\\scripts\\uihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RotateCamera.cs",
-              "DocumentMoniker": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\RotateCamera.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\RotateCamera.cs",
-              "ToolTip": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\RotateCamera.cs",
-              "RelativeToolTip": "Assets\\Scripts\\RotateCamera.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAcwAoAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UIHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\UIHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIHandler.cs",
+              "ToolTip": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\UIHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T20:29:26.857Z",
+              "WhenOpened": "2025-10-24T19:59:54.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Placing.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\Placing.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Placing.cs",
+              "ToolTip": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\Placing.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Placing.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAcwGoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T19:35:48.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
+              "ToolTip": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\Movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAADwvzAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T19:32:51.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Spawning.cs",
+              "DocumentMoniker": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\Spawning.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spawning.cs",
+              "ToolTip": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\Spawning.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spawning.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvzEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T19:31:39.34Z",
               "EditorCaption": ""
             }
           ]

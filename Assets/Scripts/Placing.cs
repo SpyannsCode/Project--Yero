@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Placing : MonoBehaviour
 {
-    public bool DebugMode = false;
+    public bool DebugMode = true;
     public GameObject ArrowNorth;
     public GameObject ArrowEast;
     public GameObject ArrowSouth;
@@ -14,6 +14,7 @@ public class Placing : MonoBehaviour
     public GameObject WallBarricade;
     public GameObject EndGoal;
     public GameObject ExtraPlatform;
+    public GameObject SpawnPosition;
 
     [SerializeField]
     private GameObject CursorIndicator;
@@ -25,7 +26,7 @@ public class Placing : MonoBehaviour
     private GameObject arrow;
     void Update()
     {
-
+        
         if (DebugMode)
         {
             if (Input.GetKeyDown("5"))
@@ -38,19 +39,19 @@ public class Placing : MonoBehaviour
             }
             if (Input.GetKeyDown("1"))
             {
-                Instantiate(WallBarricade, CursorIndicator.transform.position, Quaternion.Euler(new Vector3(0, 180, 0)));
+                CurrentTile = -1;
             }
             if (Input.GetKeyDown("2"))
             {
-                Instantiate(WallBarricade, CursorIndicator.transform.position, Quaternion.Euler(new Vector3(0, 270, 0)));
+                CurrentTile = -2;
             }
             if (Input.GetKeyDown("3"))
             {
-                Instantiate(WallBarricade, CursorIndicator.transform.position, Quaternion.Euler(new Vector3(0, 0, 180)));
+                CurrentTile = -3;
             }
             if (Input.GetKeyDown("4"))
             {
-                Instantiate(WallBarricade, CursorIndicator.transform.position, Quaternion.Euler(new Vector3(0, 90, 180)));
+                CurrentTile = -4;
             }
             if (Input.GetKeyDown("8"))
             {
@@ -109,7 +110,22 @@ public class Placing : MonoBehaviour
             {
                 arrow = Instantiate(ExtraPlatform, CursorIndicator.transform.position, ExtraPlatform.transform.rotation);
             }
-
+            if(CurrentTile == -1)
+            {
+                arrow = Instantiate(WallBarricade, CursorIndicator.transform.position, Quaternion.Euler(new Vector3(0, 180, 0)));
+            }
+            if(CurrentTile==-2)
+            {
+                arrow = Instantiate(WallBarricade, CursorIndicator.transform.position, Quaternion.Euler(new Vector3(0, 270, 0)));
+            }
+            if(CurrentTile==-3)
+            {
+                arrow = Instantiate(WallBarricade, CursorIndicator.transform.position, Quaternion.Euler(new Vector3(0, 0, 180)));
+            }
+            if(CurrentTile==-4)
+            {
+                arrow = Instantiate(WallBarricade, CursorIndicator.transform.position, Quaternion.Euler(new Vector3(0, 90, 180)));
+            }
             if (!DebugMode)
             {
                 SpawnedObjects.Add(arrow);
@@ -129,12 +145,10 @@ public class Placing : MonoBehaviour
         if (DebugMode)
         {
             DebugMode = false;
-            print("Deactivated Debug Mode");
         }
         else
         {
             DebugMode = true;
-            print("Activated Debug Mode");
         }
     }
   /*  void FixedUpdate()
@@ -156,4 +170,8 @@ public class Placing : MonoBehaviour
             CurrentTile = 4;
         }
     }*/
+  public void ChangeTileByButton(int Tile)
+    {
+        CurrentTile = Tile;
+    }
 }
