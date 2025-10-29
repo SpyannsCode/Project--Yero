@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|c:\\users\\home\\projectxerogrid\\assets\\scripts\\spawning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|C:\\Users\\Home\\ProjectXeroGrid\\assets\\scripts\\placing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\placing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|C:\\Users\\Home\\ProjectXeroGrid\\assets\\scripts\\spawning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33104362-F062-4811-DF07-ED3D3BF4D8D4}|Assembly-CSharp.csproj|C:\\Users\\Home\\ProjectXeroGrid\\assets\\scripts\\uihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
               "ToolTip": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\Movement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAIwC4AAABfAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAADwvz8AAAB2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T10:58:40.139Z",
               "EditorCaption": ""
@@ -55,19 +55,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Placing.cs",
               "DocumentMoniker": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\Placing.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Placing.cs",
               "ToolTip": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\Placing.cs",
               "RelativeToolTip": "Assets\\Scripts\\Placing.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAcwGoAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAcwBEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T19:35:48.222Z"
+              "WhenOpened": "2025-10-24T19:35:48.222Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Spawning.cs",
               "DocumentMoniker": "C:\\Users\\Home\\ProjectXeroGrid\\Assets\\Scripts\\Spawning.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spawning.cs",
@@ -75,8 +76,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Spawning.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAcwDoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T19:31:39.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T19:31:39.34Z"
             }
           ]
         }
