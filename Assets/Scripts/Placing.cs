@@ -15,6 +15,7 @@ public class Placing : MonoBehaviour
     public GameObject EndGoal;
     public GameObject ExtraPlatform;
     public GameObject SpawnPosition;
+    public GameObject Pitfall;
 
     [SerializeField]
     private GameObject CursorIndicator;
@@ -56,6 +57,10 @@ public class Placing : MonoBehaviour
             if (Input.GetKeyDown("8"))
             {
                 CurrentTile = 8;
+            }
+            if(Input.GetKeyDown("6"))
+            {
+                CurrentTile = 6;
             }
         }
 
@@ -105,6 +110,10 @@ public class Placing : MonoBehaviour
             if (CurrentTile == 7)
             {
                 arrow = Instantiate(EndGoal, CursorIndicator.transform.position, EndGoal.transform.rotation);
+            }
+            if(CurrentTile == 6)
+            {
+                arrow = Instantiate(Pitfall, CursorIndicator.transform.position, Pitfall.transform.rotation);
             }
             if (CurrentTile == 8)
             {

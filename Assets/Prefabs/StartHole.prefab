@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 866392003259309535}
   - component: {fileID: 2008028184316902930}
   - component: {fileID: 8698612790216447078}
-  m_Layer: 1
+  m_Layer: 2
   m_Name: StartHole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4805279638298921778}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SpawnLocation2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9219778510815777034}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SpawnLocation1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

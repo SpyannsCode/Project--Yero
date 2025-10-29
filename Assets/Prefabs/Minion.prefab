@@ -124,7 +124,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4857371129603561391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae9d38543e4d419429a52fc65c04bd45, type: 3}
+  m_Script: {fileID: 11500000, guid: 8faf56f87f578514a9f2b149a5a518ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TypeOfMinion: 1

@@ -12,6 +12,7 @@ TagManager:
   - Minion
   - EnemyMinion
   - Ending
+  - Pitfall
   layers:
   - Default
   - TransparentFX

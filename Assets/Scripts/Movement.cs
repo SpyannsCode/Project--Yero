@@ -6,18 +6,17 @@ using Vector3 = UnityEngine.Vector3;
 public class Movement : MonoBehaviour
 {
     public int TypeOfMinion;
-    public int movementSpeed = 5,i = 0;
+    public int movementSpeed = 5, i = 0;
     public GameObject uitexter;
     void Update()
     {
-        transform.position += transform.rotation * new Vector3(0, 0, 1) * Time.deltaTime * movementSpeed; 
+        transform.position += transform.rotation * new Vector3(0, 0, 1) * Time.deltaTime * movementSpeed;
         i++;
         if (i == 1)
         {
             CheckForTilesOrWalls();
             i = 0;
         }
-        ///CheckForCollision();
     }
     private void CheckForTilesOrWalls()
     {
@@ -43,22 +42,31 @@ public class Movement : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, -270, 0);
             }
         }
+        Ray ray = new Ray(transform.position, transform.forward);
+        if (Physics.Raycast(ray, out hit, 0.5f))
+        {
+            transform.rotation *= Quaternion.Euler(0, 90, 0);
+        }
     }
     private void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "EnemyMinion" && TypeOfMinion==1)
+        if (col.gameObject.tag == "EnemyMinion" && TypeOfMinion == 1)
         {
             Destroy(gameObject);
         }
-        if(col.gameObject.tag == "Ending" )
+        if (col.gameObject.tag == "Ending")
         {
             uitexter = GameObject.Find("Canvas");
-            if(TypeOfMinion==1)
+            if (TypeOfMinion == 1)
                 uitexter.GetComponent<UIHandler>().Score += TypeOfMinion;
             if (TypeOfMinion == -1)
             {
-                uitexter.GetComponent<UIHandler>().Score += Random.Range(-1 * uitexter.GetComponent<UIHandler>().Score/5*4, 0);
+                uitexter.GetComponent<UIHandler>().Score += Random.Range(-1 * uitexter.GetComponent<UIHandler>().Score / 5 * 4, 0);
             }
+            Destroy(gameObject);
+        }
+        if(col.gameObject.tag == "Pitfall")
+        {
             Destroy(gameObject);
         }
     }
